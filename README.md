@@ -1,3 +1,3 @@
 # create_robot
-Code for the create robot
+Botball 2020
 ;)
