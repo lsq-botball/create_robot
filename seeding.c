@@ -32,6 +32,7 @@ int main()
     cdd(-150, -150);
     msleep(2500);
     cdd(0,0);
+    msleep(2000);	
     
     // move forward until bump
     while (get_create_lbump() == 0) {
@@ -43,7 +44,7 @@ int main()
     ssp(1, closed_claw_pos);
     
     cdd(0, 0);
-    msleep(500);
+    msleep(2000);
     
     // turn and straighten robot
     cdd(-200, -200);
@@ -56,7 +57,7 @@ int main()
     cdd(-250, -250);
     msleep(800); 
     cdd(0, 0);
-    msleep(500);
+    msleep(2000);
     
     // move forward until touched at the ramp
     while(digital(9) == 0) {
@@ -70,16 +71,16 @@ int main()
     
     // align robot
     cdd(0, 0);
-    msleep(500);
+    msleep(2000);
     cdd(-150, 150);
     msleep(625);
     cdd(0, 0);
-    msleep(500);
+    msleep(2500);
     
     //open claw
     ssp(1, open_claw_pos);
     
-    msleep(1000);
+    msleep(2000);
     
     // raise arm
     int i = 0;
