@@ -51,8 +51,6 @@ int main()
     msleep(200);
     cdd(-150, 150);
     msleep(1200);  
-    cdd(200, 200);
-    msleep(300);
     cdd(0, 0);
     cdd(-250, -250);
     msleep(800); 
@@ -84,7 +82,7 @@ int main()
     
     // raise arm
     int i = 0;
-    while(i <= 1850) {
+    while(i <= 1550) {
         ssp(0, i);
         i+=15;
         msleep(15);
@@ -102,7 +100,7 @@ int main()
     msleep(1000);
     
     // lower arm
-    int n = 1850;
+    int n = 1550;
     while(n >=0) {
         ssp(0, n);
         n-=5;
@@ -124,7 +122,7 @@ int main()
     msleep(500);
     
     cdd(200, 200);
-    msleep(400);
+    msleep(300);
     
     cdd(0, 0);
     msleep(500);
@@ -155,7 +153,7 @@ int main()
     msleep(2400);
 
     cdd(0, 0);
-    msleep(400);
+    msleep(300);
     
     
     //turn robot
@@ -225,14 +223,14 @@ int main()
     //ssp(0, 70);
 
     // new: using black tape
-    while (get_create_lcliff_amt() >= 2000) {
+    while (get_create_lcliff_amt() >= 2300) {
         cdd(150, 150);
 
     }
 
     msleep(500);
 
-    while (get_create_lcliff_amt() >= 2000) {
+    while (get_create_lcliff_amt() >= 2300) {
         cdd(150, 150);
 
     }
